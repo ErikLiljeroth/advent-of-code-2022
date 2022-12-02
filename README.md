@@ -1,7 +1,7 @@
 # Advent of code 2022
 
 * part1 ☑
-* part2 ☐
+* part2 ☑
 * part3 ☐
 * part4 ☐
 * part5 ☐
