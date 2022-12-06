@@ -25,7 +25,7 @@ def parse_input(input:List[str]) -> Tuple[List[List[str]], List[int], List[List[
 
     return crate_rows, crate_nbrs, instrc
 
-def create_stacks(crate_nbrs:List[int], crate_rows:List[list]):
+def create_stacks(crate_nbrs:List[int], crate_rows:List[List[str]]) -> List[List[str]]:
     stacks = {}
     for nbr in crate_nbrs:
         cur_stack = []
@@ -37,7 +37,7 @@ def create_stacks(crate_nbrs:List[int], crate_rows:List[list]):
 
     return stacks
 
-def find_top_crates(stacks:List[list]) -> str:
+def find_top_crates(stacks:List[List[str]]) -> str:
     crates_str = ''
     for key in stacks.keys():
         crates_str = crates_str + stacks[key].pop().strip('[').strip(']')
